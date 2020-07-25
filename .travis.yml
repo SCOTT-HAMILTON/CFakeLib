@@ -15,6 +15,7 @@ addons:
     - ninja-build
     - libstdc++-8-dev
     - python3-pip
+    - python3-setuptools
     update: true
 
 matrix:
