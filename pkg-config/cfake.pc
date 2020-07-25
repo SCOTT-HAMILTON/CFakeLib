@@ -1,0 +1,11 @@
+prefix=@CFakeLibPrefix@
+exec_prefix=${prefix}
+includedir=${prefix}/include
+libdir=${exec_prefix}/lib
+
+Name: cfake
+Description: The FakeLib library
+Version: 0.0.1
+Cflags: -I${includedir}
+Requires: fake
+Libs: -L${libdir} -lCFake
