@@ -17,8 +17,7 @@ addons:
 
 matrix:
   include:
-    - env: CXX=clang++
-    - env: CXX=g++
+    - env: CXX=clang++-10
 
 before_install:
   - sudo apt-get -qq update
