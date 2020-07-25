@@ -1,5 +1,6 @@
 dist: bionic
 group: travis_latest
+sudo: true
 
 os: linux
 language: python
@@ -13,6 +14,7 @@ addons:
     - cmake
     - ninja-build
     - libstdc++-8-dev
+    - python3-pip
     update: true
 
 matrix:
