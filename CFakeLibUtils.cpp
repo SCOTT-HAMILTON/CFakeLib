@@ -3,7 +3,7 @@
 #include <iostream>
 
 extern "C" {
-void print_sink_input_info_list(sink_input_infos_t* list, size_t size) {
+void fake_utils_print_sink_input_info_list(sink_input_infos_t* list, size_t size) {
 	for (size_t ctr = 0; ctr < size; ++ctr) {
 		std::cerr << "=======[ Sink Input info #" << ctr + 1 << " ]=======\n";
 		std::cerr << "Name: " << 
@@ -21,7 +21,7 @@ void print_sink_input_info_list(sink_input_infos_t* list, size_t size) {
 		std::cerr << '\n';
 	}
 }
-void print_sink_info_list(sink_infos_t* list, size_t size) {
+void fake_utils_print_sink_info_list(sink_infos_t* list, size_t size) {
 	for (size_t ctr = 0; ctr < size; ++ctr) {
 		std::cerr << "=======[ Sink list[ctr] #" << ctr + 1 << " ]=======\n";
 		std::cerr << "Name: " << 
@@ -33,7 +33,7 @@ void print_sink_info_list(sink_infos_t* list, size_t size) {
 		std::cerr << '\n';
 	}
 }
-void print_source_info_list(source_infos_t* list, size_t size) {
+void fake_utils_print_source_info_list(source_infos_t* list, size_t size) {
 	for (size_t ctr = 0; ctr < size; ++ctr) {
 		std::cerr << "=======[ Source info #" << ctr + 1 << " ]=======\n";
 		std::cerr << "Name: " << 
@@ -45,7 +45,7 @@ void print_source_info_list(source_infos_t* list, size_t size) {
 		std::cerr << '\n';
 	}
 }
-void print_source_output_info_list(source_output_infos_t* list, size_t size) {
+void fake_utils_print_source_output_info_list(source_output_infos_t* list, size_t size) {
 	for (size_t ctr = 0; ctr < size; ++ctr) {
 		std::cerr << "=======[ Source Output info #" << ctr + 1 << " ]=======\n";
 		std::cerr << "Name: " << 

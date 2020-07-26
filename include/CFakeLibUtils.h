@@ -8,10 +8,10 @@
 extern "C" {
 #endif
 
-void print_sink_input_info_list(sink_input_infos_t* list, size_t size);
-void print_sink_info_list(sink_infos_t* list, size_t size);
-void print_source_info_list(source_infos_t* list, size_t size);
-void print_source_output_info_list(source_output_infos_t* list, size_t size);
+void fake_utils_print_sink_input_info_list(sink_input_infos_t* list, size_t size);
+void fake_utils_print_sink_info_list(sink_infos_t* list, size_t size);
+void fake_utils_print_source_info_list(source_infos_t* list, size_t size);
+void fake_utils_print_source_output_info_list(source_output_infos_t* list, size_t size);
 
 #ifdef __cplusplus
 }
