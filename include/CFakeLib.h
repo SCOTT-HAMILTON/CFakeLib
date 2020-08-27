@@ -16,6 +16,7 @@
 /* #include <vector> */
 #include <FakeLib/common.h>
 #include <pulse/subscribe.h>
+#include <string.h>
 
 typedef void(*fake_user_subscribe_callback_t)(pa_subscription_event_type_t event);
 
@@ -51,6 +52,12 @@ extern "C" {
 	size_t fake_extract_sink_list (sink_infos_t** list);
 	size_t fake_extract_source_list (source_infos_t** list);
 	size_t fake_extract_source_output_list (source_output_infos_t** list);
+
+	// Glib functions
+	void sink_infos_copy(sink_infos_t* a, sink_infos_t* b);
+	void sink_input_infos_copy(sink_input_infos_t* a, sink_input_infos_t* b);
+	void source_infos_copy(source_infos_t* a, source_infos_t* b);
+	void source_output_infos_copy(source_output_infos_t* a, source_output_infos_t* b);
 #ifdef __cplusplus
 }
 #endif //cplusplus

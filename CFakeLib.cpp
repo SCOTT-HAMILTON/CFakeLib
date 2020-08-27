@@ -201,5 +201,33 @@ size_t fake_extract_source_output_list (source_output_infos_t** list) {
 	return fake_extract(list);
 }
 
+void sink_infos_copy(sink_infos_t* a, sink_infos_t* b) {
+	b->initialized = a->initialized;
+	strcpy(b->name, a->name);
+	b->index = a->index;
+	strcpy(b->description, a->description);
+}
+void sink_input_infos_copy(sink_input_infos_t* a, sink_input_infos_t* b) {
+	b->initialized = a->initialized;
+	strcpy(b->name, a->name);
+	b->index = a->index;
+	b->owner_module = a->owner_module;
+	b->client = a->client;
+	b->sink = a->sink;
+	strcpy(b->process_binary, a->process_binary);
+}
+void source_infos_copy(source_infos_t* a, source_infos_t* b) {
+	b->initialized = a->initialized;
+	strcpy(b->name, a->name);
+	b->index = a->index;
+	strcpy(b->description, a->description);
+}
+void source_output_infos_copy(source_output_infos_t* a, source_output_infos_t* b) {
+	b->initialized = a->initialized;
+	strcpy(b->name, a->name);
+	b->index = a->index;
+	b->source = a->source;
+	strcpy(b->process_binary, a->process_binary);
+}
 
 }
